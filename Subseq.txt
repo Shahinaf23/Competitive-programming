@@ -1,0 +1,26 @@
+Sub Sequence problem
+i/p:5
+5 3 1 3 3
+Show no. of unique elements in the set or how much the value has increased
+
+O/p:3
+this is because the solution has 1 3 5
+
+import java.io.*;
+import java.util.*;
+class Main
+{
+    public static void main (String[] args) 
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        TreeSet <Integer> list=new TreeSet<Integer>();
+        for(int i=0;i<n;i++)
+        {
+            list.add(sc.nextInt());
+            
+        }
+        System.out.print(list.size());
+        
+    }
+}
